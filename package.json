@@ -14,6 +14,9 @@
     "krymoh"
   ],
   "author": "Maxwell Cofie",
-  "license": "MIT",
-  "homepage": "https://github.com/mcofie/krymoh#readme"
+  "license": "ISC",
+  "homepage": "https://github.com/mcofie/krymoh#readme",
+  "bugs": {
+    "url": "https://github.com/mcofie/krymoh/issues"
+  }
 }
