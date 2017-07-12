@@ -7,3 +7,4 @@ Krymoh is a CSS framework that focuses on basic animations and transitions in cs
 3. Gradient
 4. Translation
 5. Transitions
+
