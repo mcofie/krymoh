@@ -1,0 +1,119 @@
+/***
+
+***/
+
+
+/******************************************************************************************************************
+  ANIMATIONS
+  --
+*******************************************************************************************************************/
+
+
+$animation:('pulse','shake','bounce','gravity');
+
+
+ @keyframes shake {
+      10%, 90%{
+          transform: translate3d(-1px, 0, 0);
+      }
+      20%, 80%{
+          transform: translate3d(2px, 0, 0);
+      }
+      30%, 50%, 70%{
+          transform: translate3d(-4px, 0, 0);
+      }
+      40%, 60%{
+          transform: translate3d(4px, 0, 0);
+      }
+ }
+
+   @keyframes bounce{
+       10%,20%{
+           transform: translate3d(0,50px,0);
+       }
+       20%, 60%{
+         transform: translate3d(0, 20px, 0);
+       }
+       60%,100%{
+         transform: translate3d(0, 0px, 0);
+       }
+   }
+
+   @keyframes pulse{
+       10%,20%{
+           transform: scale3d(1,1,0);
+       }
+       20%, 60%{
+         transform: scale3d(1.1,1.1,0);
+       }
+       30%, 80%{
+         transform: scale3d(1.05,1.05,0);
+       }
+       60%,100%{
+         transform: scale3d(1, 1, 0);
+       }
+   }
+
+   @keyframes gravity{
+    10%, 20%{
+          transform: translateY(0px);
+    }
+    50%, 80%{
+          transform: translateY(100px);
+    }
+    80%, 100%{
+        transform: translateY(100px) scaleX(1.05);
+    }
+    
+   }
+
+
+
+   @mixin Sprint($len,$start){
+      @keyframes sprint{
+        from{ transform: translate3d($start,0,0);}
+        to{transform: translate3d($len,0,0);
+          visibility: hidden;}
+      }
+   }
+
+
+
+  @each $k in $animation{
+     @if $k == 'pulse'{
+       .ani-#{$k}{
+          animation: #{$k} 0.83s linear;
+       }
+     }
+     @else if $k == 'bounce'{
+       .ani-#{$k}{
+          animation: #{$k} 0.83s linear;
+       }
+     }
+     @else{
+        .ani-#{$k}{
+          animation: #{$k} 1s linear;
+        }
+     }
+  }
+
+  $r:1000;
+  $s:-100;
+
+  // @while $r > 0{
+  //   .ani-sprint-#{$r}{
+  //     @include Sprint(#{$r}#{'px'},#{$s}#{'px'});
+  //   }
+  //   $r:$r + 50;
+  // }
+
+  
+
+ .forever{
+   animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  }
+
+

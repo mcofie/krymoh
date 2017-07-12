@@ -1,0 +1,41 @@
+/**
+ Default Framework Colors
+***/
+//GLOBAL VARIABLES
+$color:#232323;
+
+//Color List -- > 20 COLORS
+$red:('red':#ff2f55);
+$turquiose:('turquiose':#00DED1);
+$black:('black':#000000);
+$crimson:('crimson':#DC143C);
+$moccasin:('moccasin':#FFE4B5);
+$lavender:('lavender':#E6E6FA);
+$silver:('silver':#C0C0C0);
+$chocolate:('chocolate':#D2691E);
+$grey:('grey':#CCCCCC);
+$blue:('blue':#4056f3);
+$pink:('pink':#ff6ec5);
+$yellow:('yellow':#ffdc2f);
+$green:('green':#3cc165);
+$ivory:('ivory':#FFFFF0);
+$violet:('violet':#EE82EE);
+$white:('white':#FFFFFF);
+$navy:('navy':#000080);
+$orange:('orange':#FFA500);
+$blue:('blue':#00BFFF);
+
+//Colors in a Map
+$colors:($red,$turquiose,$crimson,$moccasin,$lavender,$silver,$chocolate,$grey,$blue,$pink,
+$yellow,$green,$ivory,$violet,$white,$navy,$orange,$black);
+
+@each $x in $colors{
+    @each $i,$o in $x{
+        .#{$i}{
+            background-color: #{$o};
+            color:#{$o};
+        }
+    }
+}
+
+

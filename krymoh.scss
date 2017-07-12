@@ -1,0 +1,23 @@
+/**
+ * Krymoh | Pure CSS3 Framework
+ * Version: 0.01
+ * Author: Maxwell Cofie
+ * Date: 26th September 2016
+ * A generic stylesheet
+ *     This framework gives a beautiful view and look to the your
+ *     web application
+ * Email: iam@maxwellcofie.com
+ *
+ * Made available under a MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ * Krymoh.css Copyright Maxwell Cofie 2014. Generated with Sass.
+ *
+ * Website: www.maxwellcofie.com
+ */
+
+
+//Imports Components//
+//Colors -> Translations -> Transition -> Animations -> Gradient -> filters
+@import './components/colors.scss','./components/translation.scss','./components/transition.scss',
+'./components/animations.scss','./components/gradient.scss','./components/filters.scss';

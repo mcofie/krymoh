@@ -1,0 +1,71 @@
+
+/******************************************************************************************************************
+  IMAGE FILTERS
+  --
+*******************************************************************************************************************/
+
+$end:200;
+$start:0;
+
+$bl:'(';
+$br:')';
+
+//=Grayscale
+@mixin Filters($type,$val){
+   filter:#{$type}#{$bl}#{$val}#{$br};
+   -webkit-filter:#{$type}#{$bl}#{$val}#{$br};
+}
+
+
+$filters:('grayscale','sepia','contrast','invert','brightness','saturate','opacity','blur');
+
+
+@while $start <= $end {
+
+  @each $t in $filters{
+      @if $t == 'blur'{
+        .ftr-#{$t}-#{$start}{
+           @include Filters($t,$start#{'px'});
+        }
+      }
+      @else{
+        .ftr-#{$t}-#{$start}{
+           @include Filters($t,$start#{'%'});
+        }
+      }
+  }
+
+  $start: $start + 10;
+}
+
+
+//This is based on the hue-rotate function of the filter property
+$hue_start:10;
+$hue_end:500;
+
+ @while $hue_start <= $hue_end {
+   .ftr-hue-rte-#{$hue_start}{
+     @include Filters('hue-rotate',$hue_start#{'deg'});
+   }
+
+   $hue_start: $hue_start + 50;
+ }
+
+//Image Tint
+.tint{
+   filter: grayscale(100%);
+   opacity: 0.5;
+   & img{
+     display: block;
+   }
+}
+
+
+//Vibrant Color
+.vibrant{
+ filter: saturate(200%);
+   opacity: 0.3;
+   & img{
+     display: block;
+   } 
+}

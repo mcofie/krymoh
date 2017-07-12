@@ -1,0 +1,19 @@
+{
+  "name": "krymoh",
+  "version": "1.0.0",
+  "description": "A CSS Framework that adds color to your web applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcofie/krymoh.git"
+  },
+  "keywords": [
+    "krymoh"
+  ],
+  "author": "Maxwell Cofie",
+  "license": "MIT",
+  "homepage": "https://github.com/mcofie/krymoh#readme"
+}

@@ -1,37 +1,52 @@
-## Welcome to GitHub Pages
+### Emphasis
+*Single Asterisks*
+**Double Job**
+__Double Underscore__
 
-You can use the [editor on GitHub](https://github.com/maximum-dexterity/krymoh/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+##Skrike Out
+~~I striked you Out~~
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+### Preformated Code
+Use this code `print()`
 
-# Header 1
-## Header 2
-### Header 3
+### Links
+[ Click me to see](www.google.com)
 
-- Bulleted
-- List
+### Images
+![Alt text] (img_url)
 
-1. Numbered
-2. List
+### Quotes
+>Tell the world
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+## List
+- Lette one
+- Letter 3
+* See me
+* Soo that
++ pop
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+## Tables
+First Name    |  Second Name
+------------: | :-----------:
+Content One   |  Content two
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/maximum-dexterity/krymoh/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+### Code 
+<pre>Tree</pre>
+<code> var u = 4;</code>
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+``` Var c = 2px; ```
+
+### Horizontal Rule
+* * *
+***
+*****
+ - - - -
+ -----------------
+
+

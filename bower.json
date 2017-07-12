@@ -1,0 +1,20 @@
+{
+  "name": "Krymoh",
+  "description": "A CSS framework that adds color and live to web applications",
+  "main": "krymoh.css",
+  "keywords": [
+    "krymoh"
+  ],
+  "authors": [
+    "Maxwell Cofie"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
