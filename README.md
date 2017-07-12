@@ -1,52 +1,9 @@
-### Emphasis
-*Single Asterisks*
-**Double Job**
-__Double Underscore__
+### Krymoh
+Krymoh is a CSS framework that focuses on basic animations and transitions in css that adds live to a simple web based application. This was written in SASS
 
-
-
-##Skrike Out
-~~I striked you Out~~
-
-
-### Preformated Code
-Use this code `print()`
-
-### Links
-[ Click me to see](www.google.com)
-
-### Images
-![Alt text] (img_url)
-
-### Quotes
->Tell the world
-
-
-## List
-- Lette one
-- Letter 3
-* See me
-* Soo that
-+ pop
-
-
-## Tables
-First Name    |  Second Name
-------------: | :-----------:
-Content One   |  Content two
-
-
-### Code 
-<pre>Tree</pre>
-<code> var u = 4;</code>
-
-``` Var c = 2px; ```
-
-### Horizontal Rule
-* * *
-***
-*****
- - - - -
- -----------------
-
-
+## Core Components 
+1. Animations
+2. Filters
+3. Gradient
+4. Translation
+5. Transitions
