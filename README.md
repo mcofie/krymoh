@@ -110,10 +110,10 @@ These built in transitions create a seamless movement between objects or element
 ### Translation
 
 | Translation Name | Class Name | Condition |
-| ---------------- | ---------- |
+| ---------------- | ---------- | --------- |
 | Scale | `sc-ml<num>-mg<num>` *or* `sc-<num>` | `where  1 <= num <= 5`  |
 | Skew | `sk-<r|l>-<num>` | `where num =`|
-| Translate | `trnl-<num>-<num>` |
+| Translate | `trnl-<num>-<num>` |   |
 
 *ml* represents multiplier and *mg* magnitude
 
