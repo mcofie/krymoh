@@ -1,34 +1,35 @@
-# Krymoh
 ![Krymoh Image](https://github.com/mcofie/krymoh/blob/master/image.png)
-<!--![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)-->
-Krymoh is a CSS framework that focuses on basic animations and transitions in css that adds live to a simple web based application AKA the CSS movie maker This was written in [SASS](www.sacc.com)
+
+# Krymoh :wink:
+Krymoh is a CSS framework that focuses on basic animations and transitions in css that adds live to a simple web based application AKA the CSS movie maker This was written in [SASS](http://sass-lang.com/)
 
 
 ## Installations & Usage
 The framework can be added to your project using two approaches. 
+
 
 1.First it can be install using `npm` as demostrated below. 
    ```bash
       $npm install krymoh.css --save
    ```
 
-2. It can be cloned from GitHub and added to your web application as so. 
+
+2.It can be cloned from GitHub and added to your web application as so. 
    ```html 
       <head>
-        <link rel="stylesheet" href="krymoh.min.css" type="text/css">
+        <link rel="stylesheet" href="krymoh.css" type="text/css">
       </head>
    ```
 
 
 ## Core Components 
-`Krymoh` ships with these components that 
+__Krymoh__ ships with these core components: 
 1. Animations
 2. Filters
 3. Gradient
 4. Translation
 5. Transitions
 
-***
 
 ### Animations
 The animation component of krymoh is mostly preceded with `.ani-<animation-name>`. These are powerful motion effects that makes user interaction fluid.
@@ -109,7 +110,7 @@ These built in transitions create a seamless movement between objects or element
 | Translation Name | Class Name | Condition |
 | ---------------: | :--------: | :-------: |
 | Scale | `sc-ml<num>-mg<num>` *or* `sc-<num>` | `where  1 <= num <= 5`  |
-| Skew | `sk-<r|l>-<num>` | `where num =`|
+| Skew | `sk-<r or l>-<num>` | |
 | Translate | `trnl-<num>-<num>` |   |
 
 *ml* represents multiplier and *mg* magnitude
@@ -118,3 +119,4 @@ These built in transitions create a seamless movement between objects or element
 
 ## Contributing
 I plea your indulgence to help make this piece of code better and robust enough for everyone to use.
+>Written in Accra with :heart:
