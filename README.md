@@ -1,5 +1,6 @@
-##Krymoh
-![Krymoh Image] (https://github.com/mcofie/krymoh/blob/master/image.png)
+# Krymoh
+![Krymoh Image](https://github.com/mcofie/krymoh/blob/master/image.png)
+<!--![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)-->
 Krymoh is a CSS framework that focuses on basic animations and transitions in css that adds live to a simple web based application AKA the CSS movie maker This was written in [SASS](www.sacc.com)
 
 
