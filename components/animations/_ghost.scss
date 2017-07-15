@@ -1,0 +1,11 @@
+//Ghost keyframe
+@keyframes ghost{
+    from{ 
+        transform: translate3d(10px,2px,0);
+        // opacity:0;
+        }
+    to{ 
+        transform: translate3d(2px,10px,0);
+        // opacity:1;
+    }
+}

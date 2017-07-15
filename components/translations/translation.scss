@@ -1,72 +1,65 @@
-/**
-
-**/
-
 /******************************************************************************************************************
   TRANSLATIONS
   --
 *******************************************************************************************************************/
+@import '_rotate.scss','_scale.scss','skew.scss','_translate';
 
-
-/*== Rotation*/
-@mixin rotate($deg){
-  -ms-transform: rotate($deg); 
-  -webkit-transform: rotate($deg); 
-  transform: rotate($deg);
-}
-
+// Rotation Using Degree, Radian & Gradient
+// deg -> rad -> grad for short
 $rte-val:(deg,rad,grad);
 
-/**
- Rotation Using Deg, Rad & Grad**/
+//Intervals
 $start:-10;
 $end:10;
 $step:10;
 
 
+//Loop
 @while $end > 0 {
    @each $a in $rte-val {
        .rte-#{$a}-#{$end}{
-         @if $a == 'deg'{
-           @include rotate(#{$end}deg)
-         }@else if($a == 'rad'){
-           @include rotate(#{$end}rad)
-         }@else if($a == 'grad'){
-           @include rotate(#{$end}grad)
-         }
+            @if $a == 'deg'{
+                @include rotate(#{$end}deg)
+            }@else if($a == 'rad'){
+                @include rotate(#{$end}rad)
+            }@else if($a == 'grad'){
+                @include rotate(#{$end}grad)
+            }
+         //creates a hover of the above properties
          &-hvr:hover{
-         @if $a == 'deg'{
-           @include rotate(#{$end}deg)
-         }@else if($a == 'rad'){
-           @include rotate(#{$end}rad)
-         }@else if($a == 'grad'){
-           @include rotate(#{$end}grad)
-         }
-        
-       }
+            @if $a == 'deg'{
+                @include rotate(#{$end}deg)
+            }@else if($a == 'rad'){
+                @include rotate(#{$end}rad)
+            }@else if($a == 'grad'){
+                @include rotate(#{$end}grad)
+            }
+        }
    }
   $end: $end - $step;
 }
 }
 
-/*==Scale*/
-@mixin scale($magnitude){
-  -ms-transform: scale($magnitude); 
-  -webkit-transform: scale($magnitude); 
-  transform: scale($magnitude);
+
+
+//scale multiplier
+$s-mul:(1,2,3,4,5);
+
+//Specifies scale of objects with max of 5
+$s:1;
+@while $s <= 5{
+   .sc-#{$s}{
+      @include scale(#{$s});
+      //
+      &-hvr:hover{
+        @include scale(#{$s});
+      }
+   }
+   $s: $s + 1;
 }
 
 
-$s-mul:(2,3,4,5);
-
-$s:1;
-// @while $s < 5{
-//    .sc-#{$s}{
-//       @include scale(#{$s});
-//    }
-//    $s: $s + 0.1;
-// }
-
+//Loops for scale with multiplier and magnitude
 @each $mul in $s-mul{
   @for $x from 1 through 5{
     .sc-ml#{$mul}-mg#{$x}{
@@ -80,20 +73,6 @@ $s:1;
 
 
 
-/*==Skew*/
-
-@mixin skewX($deg){
-  -ms-transform: skewX($deg); 
-  -webkit-transform: skewX($deg); 
-  transform: skewX($deg);
-}
-
-
-@mixin skewY($deg){
-  -ms-transform: skewY($deg);
-  -webkit-transform: skewY($deg);
-  transform: skewY($deg);
-}
 
 $sk-end:60;
 $ks-start:360;
@@ -110,13 +89,12 @@ $sk-step:10;
 }
 
 
-
+//Interval
 $sk-end:60;
 $ks-start:360;
 $sk-step:10;
 
-//Horizontal
-
+//Horizontal ->
 @while $sk-end > 0{
   .sk-l-#{$sk-end}{
     @include skewY(#{$sk-end}deg);
@@ -128,29 +106,24 @@ $sk-step:10;
 }
 
 
-/*=Translation*/
-@mixin translate($x,$y){
-  -ms-transform: translate($x,$y);
-  -webkit-transform: translate($x,$y);
-  transform: translate($x,$y);
-}
 
+//Intervals
 $trans-step:10;
 $trans-end:100;
 $trans-start:10;
 $trans-count:10;
 
-
-
+//Loops
 @while $trans-start < $trans-end{
   @while $trans-count < $trans-end {
     .trnl-#{$trans-start}-#{$trans-count}{
        @include translate(#{$trans-start}px,#{$trans-count}px);
+       //:hover option
        &-hvr:hover{
           @include translate(#{$trans-start}px,#{$trans-count}px);
        }
     }
-    $trans-count: $trans-count + 10;
+    $trans-count: $trans-count + $trans-step;
   }
   $trans-start: $trans-start + $trans-step;
 } 

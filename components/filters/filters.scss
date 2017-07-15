@@ -1,25 +1,26 @@
-
 /******************************************************************************************************************
   IMAGE FILTERS
   --
 *******************************************************************************************************************/
-
+//Intervals
 $end:200;
 $start:0;
+$step:10;
 
+//Brackets
 $bl:'(';
 $br:')';
 
-//=Grayscale
+//= Generic Filters Mixins
 @mixin Filters($type,$val){
    filter:#{$type}#{$bl}#{$val}#{$br};
    -webkit-filter:#{$type}#{$bl}#{$val}#{$br};
 }
 
-
+//List of filters
 $filters:('grayscale','sepia','contrast','invert','brightness','saturate','opacity','blur');
 
-
+//A while loop that generates the filters based on the intervals specified.
 @while $start <= $end {
 
   @each $t in $filters{
@@ -35,23 +36,26 @@ $filters:('grayscale','sepia','contrast','invert','brightness','saturate','opaci
       }
   }
 
-  $start: $start + 10;
+  $start: $start + $step;
 }
 
 
 //This is based on the hue-rotate function of the filter property
+//Intervals for hue-rate
 $hue_start:10;
 $hue_end:500;
+$hue_step:50;
 
  @while $hue_start <= $hue_end {
    .ftr-hue-rte-#{$hue_start}{
      @include Filters('hue-rotate',$hue_start#{'deg'});
    }
-
-   $hue_start: $hue_start + 50;
+   $hue_start: $hue_start + $hue_step;
  }
 
 //Image Tint
+//This makes the image grayscale before the background-color property
+//is added.
 .tint{
    filter: grayscale(100%);
    opacity: 0.5;

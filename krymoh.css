@@ -1,23 +1,18 @@
 /**
  * Krymoh | Pure CSS3 Framework
- * Version: 0.01
+ * Version: 1.01
  * Author: Maxwell Cofie
- * Date: 26th September 2016
+ * Date Started: 26th September 2016
+ * Last Updated: 15th July 2017
  * A generic stylesheet
  *     This framework gives a beautiful view and look to the your
- *     web application
- * Email: iam@maxwellcofie.com
+ *     web pages
+ * Email: maxcofie@gmail.com
  *
- * Made available under a MIT License:
- * http://www.opensource.org/licenses/mit-license.php
+ * Krymoh.css | Copyright Maxwell Cofie 2017. Generated with Sass.
  *
- * Krymoh.css Copyright Maxwell Cofie 2014. Generated with Sass.
- *
- * Website: www.maxwellcofie.com
+ * Website: www.maxwellcofie.com  |Coming Soon!|
  */
-/**
- Default Framework Colors
-***/
 .red {
   background-color: #ff2f55;
   color: #ff2f55; }
@@ -90,16 +85,10 @@
   background-color: #000000;
   color: #000000; }
 
-/**
-
-**/
 /******************************************************************************************************************
   TRANSLATIONS
   --
 *******************************************************************************************************************/
-/*== Rotation*/
-/**
- Rotation Using Deg, Rad & Grad**/
 .rte-deg-10 {
   -ms-transform: rotate(10deg);
   -webkit-transform: rotate(10deg);
@@ -127,7 +116,96 @@
     -webkit-transform: rotate(-10grad);
     transform: rotate(-10grad); }
 
-/*==Scale*/
+.sc-1 {
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1); }
+  .sc-1-hvr:hover {
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+
+.sc-2 {
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2);
+  transform: scale(2); }
+  .sc-2-hvr:hover {
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    transform: scale(2); }
+
+.sc-3 {
+  -ms-transform: scale(3);
+  -webkit-transform: scale(3);
+  transform: scale(3); }
+  .sc-3-hvr:hover {
+    -ms-transform: scale(3);
+    -webkit-transform: scale(3);
+    transform: scale(3); }
+
+.sc-4 {
+  -ms-transform: scale(4);
+  -webkit-transform: scale(4);
+  transform: scale(4); }
+  .sc-4-hvr:hover {
+    -ms-transform: scale(4);
+    -webkit-transform: scale(4);
+    transform: scale(4); }
+
+.sc-5 {
+  -ms-transform: scale(5);
+  -webkit-transform: scale(5);
+  transform: scale(5); }
+  .sc-5-hvr:hover {
+    -ms-transform: scale(5);
+    -webkit-transform: scale(5);
+    transform: scale(5); }
+
+.sc-ml1-mg1 {
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1); }
+  .sc-ml1-mg1-hvr:hover {
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+
+.sc-ml1-mg2 {
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2);
+  transform: scale(2); }
+  .sc-ml1-mg2-hvr:hover {
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    transform: scale(2); }
+
+.sc-ml1-mg3 {
+  -ms-transform: scale(3);
+  -webkit-transform: scale(3);
+  transform: scale(3); }
+  .sc-ml1-mg3-hvr:hover {
+    -ms-transform: scale(3);
+    -webkit-transform: scale(3);
+    transform: scale(3); }
+
+.sc-ml1-mg4 {
+  -ms-transform: scale(4);
+  -webkit-transform: scale(4);
+  transform: scale(4); }
+  .sc-ml1-mg4-hvr:hover {
+    -ms-transform: scale(4);
+    -webkit-transform: scale(4);
+    transform: scale(4); }
+
+.sc-ml1-mg5 {
+  -ms-transform: scale(5);
+  -webkit-transform: scale(5);
+  transform: scale(5); }
+  .sc-ml1-mg5-hvr:hover {
+    -ms-transform: scale(5);
+    -webkit-transform: scale(5);
+    transform: scale(5); }
+
 .sc-ml2-mg1 {
   -ms-transform: scale(2);
   -webkit-transform: scale(2);
@@ -308,7 +386,6 @@
     -webkit-transform: scale(25);
     transform: scale(25); }
 
-/*==Skew*/
 .sk-r-60 {
   -ms-transform: skewX(60deg);
   -webkit-transform: skewX(60deg);
@@ -417,7 +494,6 @@
     -webkit-transform: skewY(10deg);
     transform: skewY(10deg); }
 
-/*=Translation*/
 .trnl-10-10 {
   -ms-transform: translate(10px, 10px);
   -webkit-transform: translate(10px, 10px);
@@ -499,18 +575,10 @@
     -webkit-transform: translate(10px, 90px);
     transform: translate(10px, 90px); }
 
-/**
-
-
-****/
 /******************************************************************************************************************
   TRANSITION
   --
 *******************************************************************************************************************/
-/*== Transitions*/
-/*
-This transforms an element based on the delay time specified
-*/
 .trns-all-1s {
   -moz-transition: 1s all;
   -webkit-transition: 1s all;
@@ -541,9 +609,6 @@ This transforms an element based on the delay time specified
   -o-transition: 5s all;
   transition: 5s all; }
 
-/*
-  This transforms an element based on the delay time specified & transition-timing-function
-*/
 .trns-ease-1s {
   -moz-transition: 1s ease all;
   -webkit-transition: 1s ease all;
@@ -904,9 +969,6 @@ This transforms an element based on the delay time specified
   -o-transition: 5s cubic-bezier(0.9, -0.74, 0.98, -0.38) all;
   transition: 5s cubic-bezier(0.9, -0.74, 0.98, -0.38) all; }
 
-/***
-
-***/
 /******************************************************************************************************************
   ANIMATIONS
   --
@@ -920,13 +982,6 @@ This transforms an element based on the delay time specified
     transform: translate3d(-4px, 0, 0); }
   40%, 60% {
     transform: translate3d(4px, 0, 0); } }
-@keyframes bounce {
-  10%,20% {
-    transform: translate3d(0, 50px, 0); }
-  20%, 60% {
-    transform: translate3d(0, 20px, 0); }
-  60%,100% {
-    transform: translate3d(0, 0px, 0); } }
 @keyframes pulse {
   10%,20% {
     transform: scale3d(1, 1, 0); }
@@ -936,13 +991,88 @@ This transforms an element based on the delay time specified
     transform: scale3d(1.05, 1.05, 0); }
   60%,100% {
     transform: scale3d(1, 1, 0); } }
-@keyframes gravity {
-  10%, 20% {
-    transform: translateY(0px); }
-  50%, 80% {
-    transform: translateY(100px); }
-  80%, 100% {
-    transform: translateY(100px) scaleX(1.05); } }
+@keyframes bounce {
+  10%,20% {
+    transform: translate3d(0, 50px, 0); }
+  20%, 60% {
+    transform: translate3d(0, 20px, 0); }
+  60%,100% {
+    transform: translate3d(0, 0px, 0); }
+  from {
+    transform: perspective(3000px); } }
+@keyframes ghost {
+  from {
+    transform: translate3d(10px, 2px, 0); }
+  to {
+    transform: translate3d(2px, 10px, 0); } }
+@keyframes trace {
+  from {
+    transform: translate3d(100%, 0, 0);
+    opacity: 0.8; }
+  to {
+    transform: translate3d(-100px, 0, 0);
+    opacity: 1; } }
+@keyframes zoom {
+  from {
+    transform: scale3d(1, 1, 1);
+    opacity: 1; }
+  50% {
+    transform: scale3d(1.5, 1.5, 1.5);
+    opacity: 0.5; }
+  to {
+    transform: scale3d(1, 1, 1);
+    opacity: 1; } }
+@keyframes flip {
+  from {
+    transform: perspective(2000px) rotate3d(1, 0, 0, 180deg);
+    opacity: 0; }
+  50% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    opacity: 1; }
+  70% {
+    transform: perspective(300px) rotate(1, 0, 0, -10deg); }
+  to {
+    transform: perspective(300px); } }
+@keyframes rotate {
+  form {
+    transform: rotate(0);
+    opacity: 0.1; }
+  to {
+    transform: rotate(360deg);
+    opacity: 0.9; } }
+@keyframes side {
+  from {
+    transform: skewY(20deg);
+    opacity: 0.8; }
+  to {
+    transform: skewY(-20deg);
+    opacity: 1; } }
+@keyframes wobble {
+  from {
+    transform: none; }
+  15% {
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg); }
+  30% {
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg); }
+  45% {
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg); }
+  60% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg); }
+  75% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg); }
+  to {
+    transform: none; } }
+@keyframes wipe {
+  from {
+    transform: perspective(2000px) rotate3d(0, 1, 0, 180deg);
+    opacity: 0; }
+  50% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    opacity: 1; }
+  70% {
+    transform: perspective(300px) rotate(0, 1, 0, -10deg); }
+  to {
+    transform: perspective(300px); } }
 .ani-pulse {
   animation: pulse 0.83s linear; }
 
@@ -952,8 +1082,35 @@ This transforms an element based on the delay time specified
 .ani-bounce {
   animation: bounce 0.83s linear; }
 
-.ani-gravity {
-  animation: gravity 1s linear; }
+.ani-trace {
+  animation: trace 1s linear; }
+
+.ani-zoom {
+  animation: zoom 1s linear; }
+
+.ani-flip {
+  animation: flip 1s linear; }
+
+.ani-rotate {
+  animation: rotate 1s linear; }
+
+.ani-side {
+  animation: side 1s linear; }
+
+.ani-wobble {
+  animation: wobble 1s linear; }
+
+.ani-ghost {
+  animation: ghost 1s linear; }
+
+.ani-wipe {
+  animation: wipe 1s linear; }
+
+.alternate {
+  animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+  -o-animation-direction: alternate; }
 
 .forever {
   animation-iteration-count: infinite;
@@ -961,204 +1118,123 @@ This transforms an element based on the delay time specified
   -webkit-animation-iteration-count: infinite;
   -o-animation-iteration-count: infinite; }
 
-/***
-
-
-***/
 /******************************************************************************************************************
   GRADIENT
   --
 *******************************************************************************************************************/
-/*==Gradient*/
 .grad-rgrd {
-  background: -webkit-radial-gradient("#ededed", yellow);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-radial-gradient("#ededed", yellow);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-radial-gradient("#ededed", yellow);
-  /* For Firefox 3.6 to 15 */
-  background: radial-gradient("#ededed", yellow);
-  /* Standard syntax */ }
+  background: -webkit-radial-gradient(#ededed, yellow);
+  background: -o-radial-gradient(#ededed, yellow);
+  background: -moz-radial-gradient(#ededed, yellow);
+  background: radial-gradient(#ededed, yellow); }
 
 .grad-lgrd {
-  background: -webkit-linear-gradient("#ededed", yellow);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient("#ededed", yellow);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient("#ededed", yellow);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient("#ededed", yellow);
-  /* Standard syntax */ }
+  background: -webkit-linear-gradient(#ededed, yellow);
+  background: -o-linear-gradient(#ededed, yellow);
+  background: -moz-linear-gradient(#ededed, yellow);
+  background: linear-gradient(#ededed, yellow); }
 
 .grad-rlgrd {
-  background: -webkit-repeating-linear-gradient("#ededed", yellow);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-repeating-linear-gradient("#ededed", yellow);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-repeating-linear-gradient("#ededed", yellow);
-  /* For Firefox 3.6 to 15 */
-  background: repeating-linear-gradient("#ededed", yellow);
-  /* Standard syntax */ }
+  background: -webkit-repeating-linear-gradient(#ededed, yellow);
+  background: -o-repeating-linear-gradient(#ededed, yellow);
+  background: -moz-repeating-linear-gradient(#ededed, yellow);
+  background: repeating-linear-gradient(#ededed, yellow); }
 
 .grad-rrgrd {
-  background: -webkit-repeating-radial-gradient("#ededed", yellow);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-repeating-radial-gradient("#ededed", yellow);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-repeating-radial-gradient("#ededed", yellow);
-  /* For Firefox 3.6 to 15 */
-  background: repeating-radial-gradient("#ededed", yellow);
-  /* Standard syntax */ }
+  background: -webkit-repeating-radial-gradient(#ededed, yellow);
+  background: -o-repeating-radial-gradient(#ededed, yellow);
+  background: -moz-repeating-radial-gradient(#ededed, yellow);
+  background: repeating-radial-gradient(#ededed, yellow); }
 
 .grad-lgrd-left {
-  background: -webkit-linear-gradient(left, "#ededed", yellow);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(left, "#ededed", yellow);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(left, "#ededed", yellow);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(left, "#ededed", yellow);
-  /* Standard syntax */ }
+  background: -webkit-linear-gradient(left, #ededed, yellow);
+  background: -o-linear-gradient(left, #ededed, yellow);
+  background: -moz-linear-gradient(left, #ededed, yellow);
+  background: linear-gradient(left, #ededed, yellow); }
 
 .grad-lgrd-right {
-  background: -webkit-linear-gradient(right, "#ededed", yellow);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, "#ededed", yellow);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, "#ededed", yellow);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(right, "#ededed", yellow);
-  /* Standard syntax */ }
+  background: -webkit-linear-gradient(right, #ededed, yellow);
+  background: -o-linear-gradient(right, #ededed, yellow);
+  background: -moz-linear-gradient(right, #ededed, yellow);
+  background: linear-gradient(right, #ededed, yellow); }
 
 .grad-lgrd-to right {
-  background: -webkit-linear-gradient(to right, "#ededed", yellow);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(to right, "#ededed", yellow);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(to right, "#ededed", yellow);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, "#ededed", yellow);
-  /* Standard syntax */ }
+  background: -webkit-linear-gradient(to right, #ededed, yellow);
+  background: -o-linear-gradient(to right, #ededed, yellow);
+  background: -moz-linear-gradient(to right, #ededed, yellow);
+  background: linear-gradient(to right, #ededed, yellow); }
 
 .grad-lgrd-left top {
-  background: -webkit-linear-gradient(left top, "#ededed", yellow);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(left top, "#ededed", yellow);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(left top, "#ededed", yellow);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(left top, "#ededed", yellow);
-  /* Standard syntax */ }
+  background: -webkit-linear-gradient(left top, #ededed, yellow);
+  background: -o-linear-gradient(left top, #ededed, yellow);
+  background: -moz-linear-gradient(left top, #ededed, yellow);
+  background: linear-gradient(left top, #ededed, yellow); }
 
 .grad-lgrd-bottom right {
-  background: -webkit-linear-gradient(bottom right, "#ededed", yellow);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, "#ededed", yellow);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, "#ededed", yellow);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(bottom right, "#ededed", yellow);
-  /* Standard syntax */ }
+  background: -webkit-linear-gradient(bottom right, #ededed, yellow);
+  background: -o-linear-gradient(bottom right, #ededed, yellow);
+  background: -moz-linear-gradient(bottom right, #ededed, yellow);
+  background: linear-gradient(bottom right, #ededed, yellow); }
 
 .grad-lgrd-to bottom right {
-  background: -webkit-linear-gradient(to bottom right, "#ededed", yellow);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(to bottom right, "#ededed", yellow);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(to bottom right, "#ededed", yellow);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, "#ededed", yellow);
-  /* Standard syntax */ }
+  background: -webkit-linear-gradient(to bottom right, #ededed, yellow);
+  background: -o-linear-gradient(to bottom right, #ededed, yellow);
+  background: -moz-linear-gradient(to bottom right, #ededed, yellow);
+  background: linear-gradient(to bottom right, #ededed, yellow); }
 
 .grad-lgrd-20 {
-  background: -webkit-linear-gradient(20deg, "#ededed", yellow);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(20deg, "#ededed", yellow);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(20deg, "#ededed", yellow);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(20deg, "#ededed", yellow);
-  /* Standard syntax */ }
+  background: -webkit-linear-gradient(20deg, #ededed, yellow);
+  background: -o-linear-gradient(20deg, #ededed, yellow);
+  background: -moz-linear-gradient(20deg, #ededed, yellow);
+  background: linear-gradient(20deg, #ededed, yellow); }
 
 .grad-lgrd-60 {
-  background: -webkit-linear-gradient(60deg, "#ededed", yellow);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(60deg, "#ededed", yellow);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(60deg, "#ededed", yellow);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(60deg, "#ededed", yellow);
-  /* Standard syntax */ }
+  background: -webkit-linear-gradient(60deg, #ededed, yellow);
+  background: -o-linear-gradient(60deg, #ededed, yellow);
+  background: -moz-linear-gradient(60deg, #ededed, yellow);
+  background: linear-gradient(60deg, #ededed, yellow); }
 
 .grad-lgrd-100 {
-  background: -webkit-linear-gradient(100deg, "#ededed", yellow);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(100deg, "#ededed", yellow);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(100deg, "#ededed", yellow);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(100deg, "#ededed", yellow);
-  /* Standard syntax */ }
+  background: -webkit-linear-gradient(100deg, #ededed, yellow);
+  background: -o-linear-gradient(100deg, #ededed, yellow);
+  background: -moz-linear-gradient(100deg, #ededed, yellow);
+  background: linear-gradient(100deg, #ededed, yellow); }
 
 .grad-lgrd-140 {
-  background: -webkit-linear-gradient(140deg, "#ededed", yellow);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(140deg, "#ededed", yellow);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(140deg, "#ededed", yellow);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(140deg, "#ededed", yellow);
-  /* Standard syntax */ }
+  background: -webkit-linear-gradient(140deg, #ededed, yellow);
+  background: -o-linear-gradient(140deg, #ededed, yellow);
+  background: -moz-linear-gradient(140deg, #ededed, yellow);
+  background: linear-gradient(140deg, #ededed, yellow); }
 
 .grad-lgrd-180 {
-  background: -webkit-linear-gradient(180deg, "#ededed", yellow);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(180deg, "#ededed", yellow);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(180deg, "#ededed", yellow);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(180deg, "#ededed", yellow);
-  /* Standard syntax */ }
+  background: -webkit-linear-gradient(180deg, #ededed, yellow);
+  background: -o-linear-gradient(180deg, #ededed, yellow);
+  background: -moz-linear-gradient(180deg, #ededed, yellow);
+  background: linear-gradient(180deg, #ededed, yellow); }
 
 .grad-lgrd-220 {
-  background: -webkit-linear-gradient(220deg, "#ededed", yellow);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(220deg, "#ededed", yellow);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(220deg, "#ededed", yellow);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(220deg, "#ededed", yellow);
-  /* Standard syntax */ }
+  background: -webkit-linear-gradient(220deg, #ededed, yellow);
+  background: -o-linear-gradient(220deg, #ededed, yellow);
+  background: -moz-linear-gradient(220deg, #ededed, yellow);
+  background: linear-gradient(220deg, #ededed, yellow); }
 
 .grad-lgrd-260 {
-  background: -webkit-linear-gradient(260deg, "#ededed", yellow);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(260deg, "#ededed", yellow);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(260deg, "#ededed", yellow);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(260deg, "#ededed", yellow);
-  /* Standard syntax */ }
+  background: -webkit-linear-gradient(260deg, #ededed, yellow);
+  background: -o-linear-gradient(260deg, #ededed, yellow);
+  background: -moz-linear-gradient(260deg, #ededed, yellow);
+  background: linear-gradient(260deg, #ededed, yellow); }
 
 .grad-lgrd-300 {
-  background: -webkit-linear-gradient(300deg, "#ededed", yellow);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(300deg, "#ededed", yellow);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(300deg, "#ededed", yellow);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(300deg, "#ededed", yellow);
-  /* Standard syntax */ }
+  background: -webkit-linear-gradient(300deg, #ededed, yellow);
+  background: -o-linear-gradient(300deg, #ededed, yellow);
+  background: -moz-linear-gradient(300deg, #ededed, yellow);
+  background: linear-gradient(300deg, #ededed, yellow); }
 
 .grad-lgrd-340 {
-  background: -webkit-linear-gradient(340deg, "#ededed", yellow);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(340deg, "#ededed", yellow);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(340deg, "#ededed", yellow);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(340deg, "#ededed", yellow);
-  /* Standard syntax */ }
+  background: -webkit-linear-gradient(340deg, #ededed, yellow);
+  background: -o-linear-gradient(340deg, #ededed, yellow);
+  background: -moz-linear-gradient(340deg, #ededed, yellow);
+  background: linear-gradient(340deg, #ededed, yellow); }
 
 /******************************************************************************************************************
   IMAGE FILTERS

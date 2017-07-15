@@ -1,0 +1,7 @@
+
+//*==Scale
+@mixin scale($magnitude){
+  -ms-transform: scale($magnitude); 
+  -webkit-transform: scale($magnitude); 
+  transform: scale($magnitude);
+}

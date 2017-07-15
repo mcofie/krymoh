@@ -1,0 +1,16 @@
+// Pulse Keyframe
+
+@keyframes pulse{
+    10%,20%{
+        transform: scale3d(1,1,0);
+    }
+    20%, 60%{
+        transform: scale3d(1.1,1.1,0);
+    }
+    30%, 80%{
+        transform: scale3d(1.05,1.05,0);
+    }
+    60%,100%{
+        transform: scale3d(1, 1, 0);
+    }
+}

@@ -1,0 +1,48 @@
+/******************************************************************************************************************
+  ANIMATIONS
+  --
+*******************************************************************************************************************/
+//The Keyframes for the various animations have been placed in partial file _<file-name>.scss.
+@import '_shake.scss','_pulse.scss','_bounce.scss','_ghost.scss','_trace.scss',
+'_zoom.scss','_flip.scss','_rotate.scss','_side.scss','_wobble.scss','_wipe.scss';
+
+
+//A list of animations
+$animation:('pulse','shake','bounce','trace','zoom','flip','rotate','side','wobble','ghost','wipe');
+
+
+@each $k in $animation{
+    @if $k == 'pulse'{
+      .ani-#{$k}{
+        animation: #{$k} 0.83s linear;
+      }
+    }
+    @else if $k == 'bounce'{
+      .ani-#{$k}{
+        animation: #{$k} 0.83s linear;
+      }
+    }
+    @else{
+      .ani-#{$k}{
+        animation: #{$k} 1s linear;
+      }
+    }
+}
+
+  
+.alternate{
+  animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+  -o-animation-direction: alternate;
+}
+
+
+.forever{
+  animation-iteration-count: infinite;
+-moz-animation-iteration-count: infinite;
+-webkit-animation-iteration-count: infinite;
+-o-animation-iteration-count: infinite;
+}
+
+

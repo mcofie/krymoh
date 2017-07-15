@@ -1,0 +1,11 @@
+//Trace Keyframe
+@keyframes trace {
+      from{
+          transform: translate3d(100%,0,0);
+          opacity: 0.8;
+      }
+      to{
+          transform: translate3d(-100px,0,0);
+          opacity: 1;
+      }    
+ }

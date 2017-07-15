@@ -1,0 +1,16 @@
+//Bounce Keyframe
+@keyframes bounce{
+       10%,20%{
+           transform: translate3d(0,50px,0);
+       }
+       20%, 60%{
+         transform: translate3d(0, 20px, 0);
+       }
+       60%,100%{
+         transform: translate3d(0, 0px, 0);
+       }
+       from{
+         transform: perspective(3000px);
+       }
+}
+

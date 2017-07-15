@@ -1,32 +1,23 @@
-/**
-
-
-****/
-
 /******************************************************************************************************************
   TRANSITION
   --
 *******************************************************************************************************************/
 
 
-/*== Transitions*/
-
+//*== Transitions
+// Generic transition mixin
 @mixin trans-all($time){
   -moz-transition: $time all; -webkit-transition: $time all;
   -o-transition: $time all; transition: $time all;
 }
 
-/*
-This transforms an element based on the delay time specified
-*/
+
+//Loop for all animation property
 @for $k from 1 through 5{
     .trns-all-#{$k}s{
       @include trans-all(#{$k}s);
     }
 }
-
-
-
 
 
 //ease        - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
@@ -35,8 +26,12 @@ This transforms an element based on the delay time specified
 //ease-out    - specifies a transition effect with a slow end
 //ease-in-out - specifies a transition effect with a slow start and end
 
+
+// List of transitions
 $trans-timing-func:('ease','linear','ease-in','ease-out','ease-in-out','out-back',
 'out-sine','quad','cubic','force','warm-up','palpitate');
+
+
 //Custom Transitions
 // 1. Force -> cubic-bezier(0, 1.32, 0, 0.87)
 // 2. warm-up -> cubic-bezier(1, 0.08, 0.98,-0.38)
@@ -47,10 +42,8 @@ $trans-timing-func:('ease','linear','ease-in','ease-out','ease-in-out','out-back
   -o-transition: $time $trans all; transition: $time $trans all;
 }
 
-//
-/*
-  This transforms an element based on the delay time specified & transition-timing-function
-*/
+//This transforms an element based on the delay time specified & transition-timing-function
+// It generate the transitions from the generic mixin and has a delay time of max 5s and min 1s.
 
 @for $k from 1 through 5{
   @each $c in $trans-timing-func{

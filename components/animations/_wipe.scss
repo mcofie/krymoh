@@ -1,0 +1,9 @@
+//Wipe keyframe
+@keyframes wipe {
+  from{ transform:perspective(2000px) rotate3d(0, 1, 0, 180deg);
+  opacity: 0; }
+  50%{ transform:perspective(400px) rotate3d(0,1, 0,-15deg);
+  opacity: 1; }
+  70%{ transform: perspective(300px) rotate(0,1,0,-10deg);}
+  to{ transform: perspective(300px);}
+}

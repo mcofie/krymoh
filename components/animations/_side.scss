@@ -1,0 +1,11 @@
+//Sides Keyframe
+@keyframes side {
+      from{
+          transform: skewY(20deg);
+          opacity: 0.8;
+      }
+      to{
+          transform: skewY(-20deg);
+          opacity: 1;
+      }    
+ }

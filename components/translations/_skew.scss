@@ -1,0 +1,16 @@
+//*==Skew
+
+//Skew with respect to the X-axis
+@mixin skewX($deg){
+  -ms-transform: skewX($deg); 
+  -webkit-transform: skewX($deg); 
+  transform: skewX($deg);
+}
+
+
+//Skew with respect to the Y-axis
+@mixin skewY($deg){
+  -ms-transform: skewY($deg);
+  -webkit-transform: skewY($deg);
+  transform: skewY($deg);
+}

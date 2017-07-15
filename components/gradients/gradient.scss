@@ -1,35 +1,31 @@
-/***
-
-
-***/
-
 /******************************************************************************************************************
   GRADIENT
   --
 *******************************************************************************************************************/
 
 
-/*==Gradient*/
+//*==Gradient
 $gradient-type:('radial-gradient','linear-gradient','repeating-linear-gradient','repeating-radial-gradient');
 $grd-alias:('rgrd','lgrd','rlgrd','rrgrd');
 $bl:'(';
 $br:')';
 
-$turquiose:'#ededed';
+$turquiose:#ededed;
 
 @mixin grad($grad-type,$clr_1,$clr_2){
-  background: -webkit-#{$grad-type}#{$bl}$clr_1, yellow#{$br}; /* For Safari 5.1 to 6.0 */
-  background: -o-#{$grad-type}#{$bl}$clr_1, yellow#{$br}; /* For Opera 11.1 to 12.0 */
-  background: -moz-#{$grad-type}#{$bl}$clr_1, yellow#{$br}; /* For Firefox 3.6 to 15 */
-  background: #{$grad-type}#{$bl}$clr_1, yellow#{$br}; /* Standard syntax */
+  background: -webkit-#{$grad-type}#{$bl}$clr_1, yellow#{$br}; 
+  background: -o-#{$grad-type}#{$bl}$clr_1, yellow#{$br}; 
+  background: -moz-#{$grad-type}#{$bl}$clr_1, yellow#{$br}; 
+  background: #{$grad-type}#{$bl}$clr_1, yellow#{$br}; 
 
 }
 
+
 @mixin grad-nth($grad-type,$dir,$clr_1,$clr_2){
-  background: -webkit-#{$grad-type}#{$bl}$dir,$clr_1, yellow#{$br}; /* For Safari 5.1 to 6.0 */
-  background: -o-#{$grad-type}#{$bl}$dir,$clr_1, yellow#{$br}; /* For Opera 11.1 to 12.0 */
-  background: -moz-#{$grad-type}#{$bl}$dir,$clr_1, yellow#{$br}; /* For Firefox 3.6 to 15 */
-  background: #{$grad-type}#{$bl}$dir,$clr_1, yellow#{$br}; /* Standard syntax */
+  background: -webkit-#{$grad-type}#{$bl}$dir,$clr_1, yellow#{$br}; 
+  background: -o-#{$grad-type}#{$bl}$dir,$clr_1, yellow#{$br};
+  background: -moz-#{$grad-type}#{$bl}$dir,$clr_1, yellow#{$br}; 
+  background: #{$grad-type}#{$bl}$dir,$clr_1, yellow#{$br}; 
 }
 
 
