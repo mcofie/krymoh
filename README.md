@@ -1,17 +1,17 @@
-#Krymoh
+##Krymoh
+![Krymoh Image] (https://github.com/mcofie/krymoh/blob/master/image.png)
 Krymoh is a CSS framework that focuses on basic animations and transitions in css that adds live to a simple web based application AKA the CSS movie maker This was written in [SASS](www.sacc.com)
 
 
 ## Installations & Usage
-The framework can be added to your project using two approaches. First it can be install using `npm` as 
-demostrated below.
-1. 
+The framework can be added to your project using two approaches. 
+
+1.First it can be install using `npm` as demostrated below. 
    ```bash
       $npm install krymoh.css --save
    ```
 
-It can be cloned from GitHub and added to your web application as so.
-2. 
+2. It can be cloned from GitHub and added to your web application as so. 
    ```html 
       <head>
         <link rel="stylesheet" href="krymoh.min.css" type="text/css">
@@ -47,7 +47,6 @@ Below are a list of animations that ships with the framework.
 | Trace | `trace` |
 | Wipe | `wipe` |
 
-***
 
 ### Filters
 These are great bits of codes that brings indepth and abit more color to your web sites. It defuses the obvious and creates a cinematic illusion. The filters are preceded with `.ftr-<filter-name>-<intensity>`. The following are a list of filters. The *intensity* starts from _0_ and ends at _200_
@@ -70,7 +69,6 @@ __K - Special__
    </div>
 ```
 
-***
 
 ### Gradient
 Color gradients gives indepth and different shades of emphasis to our web pages. Here are a list of the various color gradients in `krymoh`. For gradients, they are preceded with `grad-<radial-type>`
@@ -79,7 +77,6 @@ Color gradients gives indepth and different shades of emphasis to our web pages.
 | ------------: | :--------- |
 
 
-***
 
 ### Transition
 These built in transitions create a seamless movement between objects or elements.
@@ -105,8 +102,6 @@ These built in transitions create a seamless movement between objects or element
 | Warm Up | `warm-up` |
 | Palpitate | `palpitate` |
 
-***
-
 
 ### Translation
 
@@ -118,7 +113,6 @@ These built in transitions create a seamless movement between objects or element
 
 *ml* represents multiplier and *mg* magnitude
 
-***
 
 
 ## Contributing
