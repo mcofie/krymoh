@@ -1,7 +1,8 @@
 ![Krymoh Image](https://github.com/mcofie/krymoh/blob/master/image.png)
 
 # Krymoh :wink:
-Krymoh is a CSS framework that focuses on basic animations and transitions in css that adds live to a simple web based application AKA the CSS movie maker This was written in [SASS](http://sass-lang.com/)
+## Introduction
+Krymoh is a CSS framework that focuses on cinematic features in css that adds live to a web page AKA the CSS movie maker. This is written in [SASS](http://sass-lang.com/) therefore it is modular. The core idea here is to make this framework the go-to framework when a cinematic feel or property is required in a web page.
 
 
 ## Installations & Usage
