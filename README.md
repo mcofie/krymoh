@@ -1,7 +1,6 @@
 ![Krymoh Image](https://github.com/mcofie/krymoh/blob/master/image.png)
 
 # Krymoh :wink:
-## Introduction
 Krymoh is a CSS framework that focuses on cinematic features in css that adds live to a web page AKA the CSS movie maker. This is written in [SASS](http://sass-lang.com/) therefore it is modular. The core idea here is to make this framework the go-to framework when a cinematic feel or property is required in a web page.
 
 
@@ -30,6 +29,7 @@ __Krymoh__ ships with these core components:
 3. Gradient
 4. Translation
 5. Transitions
+6. Colors *(bonus)* :smile:
 
 
 ### Animations
@@ -51,8 +51,9 @@ Below are a list of animations that ships with the framework.
 | Wipe | `wipe` |
 
 
+
 ### Filters
-These are great bits of codes that brings indepth and abit more color to your web sites. It defuses the obvious and creates a cinematic illusion. The filters are preceded with `.ftr-<filter-name>-<intensity>`. The following are a list of filters. The *intensity* starts from _0_ and ends at _200_
+These are great bits of codes that bring indepth and a bit more color to your web sites. They defuse the obvious and creates a cinematic illusion. The filters are preceded with `.ftr-<filter-name>-<intensity>`. The following are a list of filters. The *intensity* starts from _0_ and ends at _200_
 
 | Filter Name  | Class Name |
 | -----------  | ---------- |
@@ -64,6 +65,7 @@ These are great bits of codes that brings indepth and abit more color to your we
 | Opacity | `opacity` |
 
 
+
 __K - Special__
 `tint` This class is used to add a color tone or rather tint to a given object.
 ```html
@@ -73,16 +75,18 @@ __K - Special__
 ```
 
 
+
 ### Gradient
-Color gradients gives indepth and different shades of emphasis to our web pages. Here are a list of the various color gradients in `krymoh`. For gradients, they are preceded with `grad-<radial-type>`
+Color gradients give indepth and different perspectives of emphasis to our web pages. Here are a list of the various color gradients in `krymoh`. For gradients, they are preceded with `grad-<radial-type>`
 
 | Gradient Name | Class Name |
 | ------------: | :--------- |
 
 
 
+
 ### Transition
-These built in transitions create a seamless movement between objects or elements.
+This built in transitions create a seamless movement between objects or elements.
 
 | Transition Name | Class Name |
 | --------------: | :--------- | 
@@ -106,7 +110,12 @@ These built in transitions create a seamless movement between objects or element
 | Palpitate | `palpitate` |
 
 
+
 ### Translation
+This component determines how a given element on a web page should be oriented. There are three (3) sub components.
++ Scale
++ Skew
++ Translate
 
 | Translation Name | Class Name | Condition |
 | ---------------: | :--------: | :-------: |
