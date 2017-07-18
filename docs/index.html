@@ -13,7 +13,7 @@
              <div class="sky_liner">
              <div class="">
                  <div class="col-md-6">
-                     <div id="sun_light" class="sun_set"></div>
+                     <!--<div id="sun_light" class="sun_set"></div>-->
                  </div>
                  <div class="col-md-6">
                       <!--<div id="sun_light" class="sun_rise"></div>-->
@@ -21,7 +21,7 @@
              </div>
          </div>
          
-         <div id="mountain">
+         <div id="mountain container">
              <div class="view"></div>
          </div>
 
@@ -29,7 +29,7 @@
              <div class="container">
                  <div class="col-md-8 col-md-offset-2" style="text-align:center;">
                       <ul class="list-unstyled">
-                     <li><h1 class="">Krymoh</h1></li>
+                     <li><h1 class="ani-flip">Krymoh</h1></li>
                      <li>
                          <p id="desc">
                              Krymoh is a CSS framework that focuses on cinematic features in css that adds live to a web page 
@@ -56,7 +56,7 @@
                                 <div class="item active">
                                         <div class="slate">
                                            <div class="container">
-                                                <div class="col-md-6" style="text-align:center;">
+                                                <div class="col-md-6 hidden-xs" style="text-align:center;">
                                                     <div id="ball" class="ani-bounce forever">
                                                         <i class="fa fa-soccer-ball-o fa-5x"></i>
                                                     </div>
@@ -81,7 +81,7 @@
                                         <div class="container">
                                                 <div class="col-md-6" style="text-align:center;">
                                             
-                                                    <div class="">
+                                                    <div class="hidden-xs">
                                                         <div id="ftr-img" class="tint">
                                                            <img class="orange-b" src="img/max.jpg" />
                                                         </div>
@@ -106,7 +106,7 @@
                                 <div class="item">
                                     <div class="slate">
                                            <div class="container">
-                                                <div class="col-md-6" style="text-align:center;">
+                                                <div class="col-md-6 hidden-xs" style="text-align:center;">
                                                     <div id="object" class="rte-deg-10-hvr trns-all-1s">
                                                         <i class="fa fa-thumbs-o-down fa-5x"></i>
                                                     </div>
@@ -130,9 +130,9 @@
                                 <div class="item">
                                     <div class="slate">
                                            <div class="container">
-                                                <div class="col-md-6" style="text-align:center;">
+                                                <div class="col-md-6 hidden-xs" style="text-align:center;">
                                                     <div id="object" class="rte-deg-10-hvr trns-all-1s">
-                                                        <i class="fa fa-thumbs-o-down fa-5x"></i>
+                                                        <i class="fa fa-music fa-5x"></i>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
@@ -140,8 +140,10 @@
                                                         <li><h2>Transitions</h2></li>
                                                         <li>
                                                          <p>
-                                                            This built in transitions create a seamless movement between objects or elements
-
+                                                            This built in transitions create a seamless movement between 
+                                                            objects or elements. It comes in different
+                                                            types and forms with some custom types. A typical transition 
+                                                            takes this form <code>.trns-transition-funtion-time</code>
                                                          </p>
                                                         </li>
                                                     </ul>
@@ -163,25 +165,33 @@
                 </div>
 
 
-             <div class="container">
-                 <div class="col-md-8 col-md-offset-2" style="text-align:center;padding:50px 0;">
-                    <a href="raw.github.com/mcofie/krymoh/master/krymoh.css">
-                       <button class="btn btn-default trns-all-1s btn-lg"> <i class="fa fa-download fa-2x"></i> Download</button>
-                    </a>
-                     <a href="https://github.com/mcofie/krymoh">
-                        <button class="btn btn-default trns-all-1s btn-lg"><i class="fa fa-github fa-2x"></i> Fork On GitHub</button>
-                     </a>
-                 </div>
-             </div>
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2" style="text-align:center;padding:50px 0;">
+            <a href="https://raw.github.com/mcofie/krymoh/master/krymoh.css">
+                <button class="btn btn-default trns-all-1s btn-lg"> <i class="fa fa-download fa-2x"></i> Download</button>
+            </a>
+                <a href="https://github.com/mcofie/krymoh">
+                <button class="btn btn-default trns-all-1s btn-lg"><i class="fa fa-github fa-2x"></i> Fork On GitHub</button>
+                </a>
+            </div>
 
+            </div class="container">
+                <div class="col-md-6 col-md-offset-3" style="text-align:center;">
+                    <p class="support">
+                        Your contributions and support are warmly welcome. Let's join forces and make 
+                        Krymoh a much mightier force.
+                    </p>
+                </div>
+            </div>
 
-         </div>
-           <div id=""></div>
-         </div>
+        </div>
+
 
          <footer class="center-block">
+             
              <ul class="list-unstyled credit">
-                 <li><h3>Written Out of <i style="color:#fb6363;" class="fa fa-heart fa-1x ani-pulse forever"></i> for humanity by @mcofie</h3></li>
+                 <li><h4>Written Out of <i style="color:#ad5050;" 
+                 class="fa fa-heart fa-1x ani-pulse forever"></i> for peace & beauty by @mcofie</h4></li>
                  <li>&copy; 2017 All Rights Reserved.</li>
              </ul>
          </footer>
@@ -189,5 +199,8 @@
 
      <script src="js/jquery-1.11.3.min.js"></script>
      <script src="js/bootstrap.min.js"></script>
+     <script>
+         $('.carousel').carousel();
+     </script>
     </body>
 </html>

@@ -19,6 +19,16 @@
   font-family: "raleway";
 }
 
+code{
+    color:#376a34;
+    background-color: #efefef;
+    text-shadow: 0px 1px 1px #bfbfbf; 
+}
+
+.support{
+    font-size: 1.3em;
+    color:#FFF;
+}
 
 h1{
     font-family: "santuary";
@@ -46,10 +56,8 @@ h1{
 
 main{
     width: 100%;
-    margin-right: 15px;
     float: left;
-    /*height: 700px;*/
-    background-image: radial-gradient( circle at top left, #e2cb24,#d6f2ff 30%);
+    animation: afternoon 20s linear infinite alternate;
 }
 
 .carousel-control.left,.carousel-control.right{
@@ -67,6 +75,10 @@ main{
     color:#CCC;
 }
 
+.ani-flip{
+     animation-delay: 10s;
+     animation-iteration-count: 4;
+}
 
 /**/
 .sky_liner{
@@ -127,8 +139,12 @@ footer{
     background:linear-gradient( #4a843d, #2d5a3d);
 }
 
+/*.fa{
+    color:#2d5a3d;
+}*/
+
 .credit{
-    color:#FFF;
+    color:#75ab87;
 }
 
 #ball{
@@ -173,6 +189,26 @@ footer{
 }
 
 
+@keyframes afternoon{
+    0%{
+          background-image: radial-gradient( circle at top left, #e2cb24,#86f7fd 50%);
+          /*opacity: 0;*/
+      }
+    50%{
+          background-image: linear-gradient(180deg, #ca9c62,#eac950 30%);
+          /*opacity: 0;*/
+      }
+    90%{
+          background-image: linear-gradient(180deg, #886233,#eac950 30%);
+          /*opacity: 0;*/
+      }
+    100%{
+        background-image: radial-gradient( circle at top right, #333,#232323 30%);
+        /*opacity: 1;*/
+    }
+}
+
+    /*background-image: radial-gradient( circle at top left, #e2cb24,#333 30%);*/
 
 
 @keyframes sunrise{
@@ -198,7 +234,7 @@ footer{
 }
 
 .sun_set{
-    animation: sunset 20s linear 5s infinite alternate;
+    animation: sunset 20s linear infinite;
     background-image: url("../img/sun_set.svg");
     background-size: contain;
 }

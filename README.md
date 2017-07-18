@@ -1,7 +1,7 @@
 ![Krymoh Image](https://github.com/mcofie/krymoh/blob/master/krymoh_logo.png)
 
 # Krymoh :wink:
-Krymoh is a CSS framework that focuses on cinematic features in css that adds live to a web page AKA the CSS movie maker. This is written in [SASS](http://sass-lang.com/) therefore it is modular. The core idea here is to make this framework the go-to framework when a cinematic feel or property is required in a web page.
+Krymoh is a CSS framework that focuses on cinematic features in css that adds live to a web page AKA the CSS movie maker. This is written in [SASS](http://sass-lang.com/) therefore it is modular. The core idea here is to make this the go-to framework when a cinematic feel or property is required in a web page.
 
 
 ## Installations & Usage
@@ -17,7 +17,7 @@ The framework can be added to your project using two approaches.
 2.It can be cloned from GitHub and added to your web application as so. 
    ```html 
       <head>
-        <link rel="stylesheet" href="krymoh.css" type="text/css">
+        <link rel="stylesheet" href="krymoh.min.css" type="text/css">
       </head>
    ```
 
@@ -81,12 +81,13 @@ Color gradients give indepth and different perspectives of emphasis to our web p
 
 | Gradient Name | Class Name |
 | ------------: | :--------- |
-
+| Blue Seal | `blue-seal`|
 
 
 
 ### Transition
-This built in transitions create a seamless movement between objects or elements.
+This built in transitions create a seamless movement between objects or elements. It comes in different
+types and forms with some custom types. A typical transition takes this form `.trns-<transition-funtion>-<time>`.
 
 | Transition Name | Class Name |
 | --------------: | :--------- | 
@@ -112,21 +113,30 @@ This built in transitions create a seamless movement between objects or elements
 
 
 ### Translation
-This component determines how a given element on a web page should be oriented. There are three (3) sub components.
+This component determines how a given element on a web page should be oriented. There are four (4) sub components.
 + Scale
 + Skew
++ Rotate
 + Translate
 
 | Translation Name | Class Name | Condition |
 | ---------------: | :--------: | :-------: |
 | Scale | `sc-ml<num>-mg<num>` *or* `sc-<num>` | `where  1 <= num <= 5`  |
 | Skew | `sk-<r or l>-<num>` | |
+| Rotate | `rte-<rad or grad or deg>-<num>`| `where  10 <= num <= 360` |
 | Translate | `trnl-<num>-<num>` |   |
 
 *ml* represents multiplier and *mg* magnitude
 
 
+## Miscellaneous
+These are miscellaneous properties that apply to most of the components listed above.
+| Property | Description | Type |
+| --------:|:----------| :--: |
+| `forever`| Infinite iteration for animations | class |
+| `-hvr` | Perform translation or transition on `:hover`| postfix |
+
 
 ## Contributing
-I plea your indulgence to help make this piece of code better and robust enough for everyone to use.
+I plead your indulgence to help make this piece of code better and robust enough for everyone to use.
 >Written in Accra with :heart:
