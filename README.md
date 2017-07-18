@@ -131,8 +131,9 @@ This component determines how a given element on a web page should be oriented. 
 
 ## Miscellaneous
 These are miscellaneous properties that apply to most of the components listed above.
+
 | Property | Description | Type |
-| --------:|:----------| :--: |
+| -------: | :---------: | :--: |
 | `forever`| Infinite iteration for animations | class |
 | `-hvr` | Perform translation or transition on `:hover`| postfix |
 
