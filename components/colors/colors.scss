@@ -29,8 +29,10 @@ $yellow,$green,$ivory,$violet,$white,$navy,$orange,$black);
 @each $x in $colors{
     @each $i,$o in $x{
         .#{$i}{
-            background-color: #{$o};
             color:#{$o};
+            &-b{
+                background-color: #{$o};
+            }
         }
     }
 }
