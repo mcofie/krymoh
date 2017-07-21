@@ -11,7 +11,7 @@ $lavender:('lavender':#E6E6FA);
 $silver:('silver':#C0C0C0);
 $chocolate:('chocolate':#D2691E);
 $grey:('grey':#CCCCCC);
-$blue:('blue':#4056f3);
+$brown:('brown':#5d3f32);
 $pink:('pink':#ff6ec5);
 $yellow:('yellow':#ffdc2f);
 $green:('green':#3cc165);
@@ -24,7 +24,7 @@ $blue:('blue':#00BFFF);
 
 //Colors in a Map
 $colors:($red,$turquiose,$crimson,$moccasin,$lavender,$silver,$chocolate,$grey,$blue,$pink,
-$yellow,$green,$ivory,$violet,$white,$navy,$orange,$black);
+$yellow,$green,$ivory,$violet,$white,$navy,$orange,$black,$brown);
 
 @each $x in $colors{
     @each $i,$o in $x{
@@ -36,5 +36,3 @@ $yellow,$green,$ivory,$violet,$white,$navy,$orange,$black);
         }
     }
 }
-
-

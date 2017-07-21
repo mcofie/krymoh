@@ -3,22 +3,32 @@
     <head>
         <title>Krymoh Framework</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Maxwell Cofie">
         <link type="text/css" href="../krymoh.min.css" rel="stylesheet">
         <link type="text/css" href="css/style.css" rel="stylesheet">
     </head>
-    <body>
-        
+
+    <body>      
+
      <main class="">
          <div>
-             <div class="sky_liner">
-             <div class="">
+            <div class="sky_liner">
+             <div class="hidden-xs">
                  <div class="col-md-6">
-                     <!--<div id="sun_light" class="sun_set"></div>-->
+                     <div id="sun_light" class="sun_set"></div>
                  </div>
                  <div class="col-md-6">
                       <!--<div id="sun_light" class="sun_rise"></div>-->
                  </div>
              </div>
+           </div>
+
+         <div class="container">
+             <ul class="list-unstyled" style="color:#FFF;">
+                 <li><h2 id="tag" class="">SUNNY DAY</h2></li>
+                 <li><h3><i class="fa fa-map"></i> Kintampo, Ghana</h3></li>
+                 <li><h4 id="time"><i class="fa fa-clock"></i>13:00 GMT</h4></li>
+             </ul>
          </div>
          
          <div id="mountain container">
@@ -43,140 +53,138 @@
              </div>
 
 
-              <div class="components_wrapper">
-                   <div id="myCarousel" class="carousel slide">
-                            <!-- Carousel indicators -->
-                            <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                            </ol>
-                            <!-- Carousel items -->
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                        <div class="slate">
-                                           <div class="container">
-                                                <div class="col-md-6 hidden-xs" style="text-align:center;">
-                                                    <div id="ball" class="ani-bounce forever">
-                                                        <i class="fa fa-soccer-ball-o fa-5x"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <ul class="list-unstyled">
-                                                        <li><h2>Animations</h2></li>
-                                                        <li>
-                                                         <p>
-                                                             The animation component of krymoh is mostly preceded with <code>.ani-animation-name</code>. These are powerful motion 
-                                                                 effects that makes user interaction fluid. Below are a list of animations that ships with the framework.
-                                                         </p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                           </div>
+        <div class="components_wrapper">
+            <div id="myCarousel" class="carousel slide">
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                                <div class="slate">
+                                    <div class="container">
+                                        <div class="col-md-6 hidden-xs" style="text-align:center;">
+                                            <div id="ball" class="ani-bounce forever">
+                                                <i class="fa fa-soccer-ball-o fa-5x"></i>
+                                            </div>
                                         </div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="slate">
-                                        <div class="container">
-                                                <div class="col-md-6" style="text-align:center;">
-                                            
-                                                    <div class="hidden-xs">
-                                                        <div id="ftr-img" class="tint">
-                                                           <img class="orange-b" src="img/max.jpg" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <ul class="list-unstyled">
-                                                        <li><h2>Filters</h2></li>
-                                                        <li>
-                                                         <p>
-                                                             These are great bits of codes that bring indepth and a bit more color to your web sites. 
-                                                             They defuse the obvious and creates a cinematic illusion. The filters are preceded with 
-                                                             <code>.ftr-filter-name-intensity</code>.
-                                                         </p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                           </div>
+                                        <div class="col-md-6">
+                                            <ul class="list-unstyled">
+                                                <li><h2>Animations</h2></li>
+                                                <li>
+                                                    <p>
+                                                        The animation component of krymoh takes the form <code>.ani-animation-name</code>. These are powerful motion 
+                                                            effects that makes user interaction fluid. Below are a list of animations that ships with the framework.
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
+                        </div>
 
-                                <div class="item">
-                                    <div class="slate">
-                                           <div class="container">
-                                                <div class="col-md-6 hidden-xs" style="text-align:center;">
-                                                    <div id="object" class="rte-deg-10-hvr trns-all-1s">
-                                                        <i class="fa fa-thumbs-o-down fa-5x"></i>
-                                                    </div>
+                        <div class="item">
+                            <div class="slate">
+                                <div class="container">
+                                        <div class="col-md-6" style="text-align:center;">
+                                    
+                                            <div class="hidden-xs">
+                                                <div id="ftr-img" class="tint">
+                                                    <img class="orange-b" src="img/max.jpg" />
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <ul class="list-unstyled">
-                                                        <li><h2>Translation</h2></li>
-                                                        <li>
-                                                         <p>
-                                                             This component determines how a given element on a web page should be oriented. 
-                                                             There are three (3) sub components. (a) Scale - <code>sc-(num)-mg(num)</code>
-                                                             or <code>sc-num</code>(b) Skew - <code>sk-r</code> or <code>l-num</code> (c) Translate - <code>trnl-num-num</code>
-                                                         </p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                           </div>
+                                            </div>
                                         </div>
-                                </div>
+                                        <div class="col-md-6">
+                                            <ul class="list-unstyled">
+                                                <li><h2>Filters</h2></li>
+                                                <li>
+                                                    <p>
+                                                        These are great bits of codes that bring indepth and a bit more color to your web sites. 
+                                                        They defuse the obvious and creates a cinematic illusion. The filters are written in the form 
+                                                        <code>.ftr-filter-name-intensity</code>.
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
 
-                                <div class="item">
-                                    <div class="slate">
-                                           <div class="container">
-                                                <div class="col-md-6 hidden-xs" style="text-align:center;">
-                                                    <div id="object" class="rte-deg-10-hvr trns-all-1s">
-                                                        <i class="fa fa-music fa-5x"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <ul class="list-unstyled">
-                                                        <li><h2>Transitions</h2></li>
-                                                        <li>
-                                                         <p>
-                                                            This built in transitions create a seamless movement between 
-                                                            objects or elements. It comes in different
-                                                            types and forms with some custom types. A typical transition 
-                                                            takes this form <code>.trns-transition-funtion-time</code>
-                                                         </p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                           </div>
+                        <div class="item">
+                            <div class="slate">
+                                    <div class="container">
+                                        <div class="col-md-6 hidden-xs" style="text-align:center;">
+                                            <div id="object" class="rte-deg-10-hvr trns-all-1s">
+                                                <i class="fa fa-thumbs-o-down fa-5x"></i>
+                                            </div>
                                         </div>
+                                        <div class="col-md-6">
+                                            <ul class="list-unstyled">
+                                                <li><h2>Translation</h2></li>
+                                                <li>
+                                                    <p>
+                                                        This component determines how a given element on a web page should be oriented. 
+                                                        There are three (3) sub components. (a) Scale - <code>sc-(num)-mg(num)</code>
+                                                        or <code>sc-num</code>(b) Skew - <code>sk-r</code> or <code>l-num</code> (c) Translate - <code>trnl-num-num</code>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <!-- Carousel nav -->
-                            <a class="carousel-control left" href="#myCarousel"
-                            data-slide="prev">
-                              <i class="fa fa-caret-left fa-2x"></i>
-                            </a>
-                            <a class="carousel-control right" href="#myCarousel"
-                            data-slide="next">                            
-                             <i class="fa fa-caret-right fa-2x"></i>
-                            </a>
-                            </div>
-                </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="slate">
+                                    <div class="container">
+                                        <div class="col-md-6 hidden-xs" style="text-align:center;">
+                                            <div id="object" class="rte-deg-50-hvr trns-warm-up-1s">
+                                                <i class="fa fa-music fa-5x"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul class="list-unstyled">
+                                                <li><h2>Transitions</h2></li>
+                                                <li>
+                                                    <p>
+                                                    Transitions create a seamless movement between 
+                                                    objects or elements. It comes in different
+                                                    types and forms with some custom types. A typical transition 
+                                                    takes this form <code>.trns-transition-funtion-time</code>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- Carousel nav -->
+                    <a class="carousel-control left" href="#myCarousel"
+                    data-slide="prev">
+                        <i class="fa fa-caret-left fa-2x"></i>
+                    </a>
+                    <a class="carousel-control right" href="#myCarousel"
+                    data-slide="next">                            
+                        <i class="fa fa-caret-right fa-2x"></i>
+                    </a>
+                    </div>
+        </div>
 
 
         <div class="container">
-            <div class="col-md-8 col-md-offset-2" style="text-align:center;padding:50px 0;">
-            <a href="https://raw.github.com/mcofie/krymoh/master/krymoh.css">
-                <button class="btn btn-default trns-all-1s btn-lg"> <i class="fa fa-download fa-2x"></i> Download</button>
-            </a>
-                <a href="https://github.com/mcofie/krymoh">
-                <button class="btn btn-default trns-all-1s btn-lg"><i class="fa fa-github fa-2x"></i> Fork On GitHub</button>
+            <div class="col-md-10 col-md-offset-1" style="text-align:center;padding:50px 0;">
+                <a href="https://raw.github.com/mcofie/krymoh/master/krymoh.css">
+                    <button class="btn btn-default trns-all-1s btn-lg"> <i class="fa fa-download fa-2x"></i> Download</button>
                 </a>
-            </div>
-
-            </div class="container">
-                <div class="col-md-6 col-md-offset-3" style="text-align:center;">
+                <a href="https://github.com/mcofie/krymoh">
+                    <button class="btn btn-default trns-all-1s btn-lg"><i class="fa fa-github fa-2x"></i> Fork On GitHub</button>
+                </a>
+            
+                <div class="col-md-8 col-md-offset-2" style="text-align:center; padding-top:30px;">
                     <p class="support">
                         Your contributions and support are warmly welcome. Let's join forces and make 
                         Krymoh a much mightier force.
@@ -187,20 +195,57 @@
         </div>
 
 
-         <footer class="center-block">
-             
-             <ul class="list-unstyled credit">
-                 <li><h4>Written Out of <i style="color:#ad5050;" 
-                 class="fa fa-heart fa-1x ani-pulse forever"></i> for peace & beauty by @mcofie</h4></li>
-                 <li>&copy; 2017 All Rights Reserved.</li>
-             </ul>
+         <footer>
+             <div class="container">
+                 <ul class="list-unstyled credit">
+                    <li><h4>Written Out of <i style="color:#ad5050;" 
+                    class="fa fa-heart fa-1x ani-pulse forever"></i> for peace & beauty by @mcofie</h4></li>
+                    <li>&copy; 2017 All Rights Reserved.</li>
+                 </ul>
+             </div>
          </footer>
+
      </main>    
 
      <script src="js/jquery-1.11.3.min.js"></script>
      <script src="js/bootstrap.min.js"></script>
      <script>
          $('.carousel').carousel();
+         
+         //the weather & time element tags
+         var weather = $('#tag');
+         var time = $('#time');
+
+         //initialize checks
+         var flag=y_check=x_check=0;
+
+        //setInterval function
+         window.setInterval(function(){ 
+             flag ++;
+             if(flag % 20 == 9){
+                if(!y_check){
+                    weather.text("SUNSET");
+                    time.text('16:00 GMT');
+                    y_check = 1;
+                }else{
+                    weather.text("SUNSHINE");
+                    time.text('11:00 GMT');
+                    y_check = 0;
+                }  
+             }
+             else if(flag % 20 == 0){
+                if(!x_check){
+                    weather.text("SUNRISE");
+                    time.text('6:30 GMT');
+                    x_check = 1;
+                }else{
+                    weather.text("SUNNY DAY");
+                    time.text('12:07 GMT');
+                    x_check = 0;
+                }
+             }
+             },1000);
+
      </script>
     </body>
 </html>

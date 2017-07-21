@@ -1,0 +1,4 @@
+//Saucy Red
+.grad-saucy-red{
+  @include grad('linear-gradient', #ff6e6e, #6b3026 );
+}

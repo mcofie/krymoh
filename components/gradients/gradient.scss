@@ -3,84 +3,14 @@
   --
 *******************************************************************************************************************/
 
-
 //*==Gradient
-$gradient-type:('radial-gradient','linear-gradient','repeating-linear-gradient','repeating-radial-gradient');
-$grd-alias:('rgrd','lgrd','rlgrd','rrgrd');
-$bl:'(';
-$br:')';
-
-$turquiose:#ededed;
-
-@mixin grad($grad-type,$clr_1,$clr_2){
-  background: -webkit-#{$grad-type}#{$bl}$clr_1, yellow#{$br}; 
-  background: -o-#{$grad-type}#{$bl}$clr_1, yellow#{$br}; 
-  background: -moz-#{$grad-type}#{$bl}$clr_1, yellow#{$br}; 
-  background: #{$grad-type}#{$bl}$clr_1, yellow#{$br}; 
-
-}
+//import partial gradient files
+@import '_function.scss','_blue_seal.scss','_blackish.scss','_gold_coal.scss','_green_corel.scss',
+'_saucy_red.scss';
 
 
-@mixin grad-nth($grad-type,$dir,$clr_1,$clr_2){
-  background: -webkit-#{$grad-type}#{$bl}$dir,$clr_1, yellow#{$br}; 
-  background: -o-#{$grad-type}#{$bl}$dir,$clr_1, yellow#{$br};
-  background: -moz-#{$grad-type}#{$bl}$dir,$clr_1, yellow#{$br}; 
-  background: #{$grad-type}#{$bl}$dir,$clr_1, yellow#{$br}; 
-}
 
 
-//gradient without direction
-@each $r in $gradient-type {
-
-  @if $r == 'radial-gradient' {
-    .grad-#{'rgrd'} {
-      @include grad(#{$r},$turquiose,$color);
-    }
-  } @else if $r == 'linear-gradient' {
-    .grad-#{'lgrd'} {
-      @include grad(#{$r},$turquiose,$color);
-    }
-  } @else if $r == 'repeating-linear-gradient' {
-    .grad-#{'rlgrd'} {
-      @include grad(#{$r},$turquiose,$color);
-    }
-  } @else if $r == 'repeating-radial-gradient' {
-    .grad-#{'rrgrd'} {
-      @include grad(#{$r},$turquiose,$color);
-    }
-  }
-
-}
 
 
-$dir:(left,right,to right,left top,bottom right,to bottom right);
 
-//gradient with direction -> properties
-@each $r in $gradient-type {
-
-  @each $v in $dir{
-    @if $r == 'linear-gradient' {
-      .grad-#{'lgrd'}-#{$v}{
-        @include grad-nth(#{$r},$v,$turquiose,$color);
-      }
-    }
-  }
-  
-}
-
-$grad_deg_step:10;
-$grad_deg_start:10;
-$grad_deg_end:360;
-
-
-@while $grad_deg_start < $grad_deg_end{
-  @each $r in $gradient-type{
-    @if $r == 'linear-gradient' {
-    .grad-#{'lgrd'}-#{$grad_deg_start}{
-      @include grad-nth(#{$r},$grad_deg_start#{deg},$turquiose,$color);
-    }
-  }
-
-  $grad_deg_start: $grad_deg_start + $grad_deg_step;
-}
-}

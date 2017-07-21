@@ -2,7 +2,7 @@
   TRANSLATIONS
   --
 *******************************************************************************************************************/
-@import '_rotate.scss','_scale.scss','skew.scss','_translate';
+@import '_rotate.scss','_scale.scss','_skew.scss','_translate';
 
 // Rotation Using Degree, Radian & Gradient
 // deg -> rad -> grad for short
@@ -10,8 +10,9 @@ $rte-val:(deg,rad,grad);
 
 //Intervals
 $start:-10;
-$end:10;
+$end:500;
 $step:10;
+
 
 
 //Loop
@@ -36,10 +37,9 @@ $step:10;
             }
         }
    }
-  $end: $end - $step;
 }
+$end: $end - $step;
 }
-
 
 
 //scale multiplier
@@ -74,8 +74,8 @@ $s:1;
 
 
 
-$sk-end:60;
-$ks-start:360;
+$sk-end:360;
+$ks-start:10;
 $sk-step:10;
 
 @while $sk-end > 0{
@@ -90,8 +90,8 @@ $sk-step:10;
 
 
 //Interval
-$sk-end:60;
-$ks-start:360;
+$sk-end:360;
+$ks-start:10;
 $sk-step:10;
 
 //Horizontal ->
@@ -109,9 +109,10 @@ $sk-step:10;
 
 //Intervals
 $trans-step:10;
-$trans-end:100;
+$trans-end:500;
 $trans-start:10;
 $trans-count:10;
+
 
 //Loops
 @while $trans-start < $trans-end{
@@ -127,5 +128,3 @@ $trans-count:10;
   }
   $trans-start: $trans-start + $trans-step;
 } 
-
-

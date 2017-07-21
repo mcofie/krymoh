@@ -1,0 +1,4 @@
+//Blue Seal
+.grad-blue-seal{
+  @include grad('linear-gradient', #3d97cc,#07203e );
+}

@@ -1,0 +1,4 @@
+//Blackish
+.grad-blackish{
+  @include grad('linear-gradient', #424242,#000000 );
+}

@@ -1,0 +1,22 @@
+$gradient-type:('radial-gradient','linear-gradient','repeating-linear-gradient','repeating-radial-gradient');
+$grd-alias:('rgrd','lgrd','rlgrd','rrgrd');
+$bl:'(';
+$br:')';
+
+$turquiose:#ededed;
+
+@mixin grad($grad-type,$clr_1,$clr_2){
+  background: -webkit-#{$grad-type}#{$bl}$clr_1,$clr_2#{$br}; 
+  background: -o-#{$grad-type}#{$bl}$clr_1, $clr_2#{$br}; 
+  background: -moz-#{$grad-type}#{$bl}$clr_1,$clr_2#{$br}; 
+  background: #{$grad-type}#{$bl}$clr_1,$clr_2#{$br}; 
+
+}
+
+
+@mixin grad-nth($grad-type,$dir,$clr_1,$clr_2){
+  background: -webkit-#{$grad-type}#{$bl}$dir,$clr_1, yellow#{$br}; 
+  background: -o-#{$grad-type}#{$bl}$dir,$clr_1, yellow#{$br};
+  background: -moz-#{$grad-type}#{$bl}$dir,$clr_1, yellow#{$br}; 
+  background: #{$grad-type}#{$bl}$dir,$clr_1, yellow#{$br}; 
+}
