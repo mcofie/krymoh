@@ -1,38 +1,42 @@
 //Default Framework Colors
-$color:#232323;
+$color: #232323;
 
 //Color List -- > 20 COLORS
-$red:('red':#ff2f55);
-$turquiose:('turquiose':#00DED1);
-$black:('black':#000000);
-$crimson:('crimson':#DC143C);
-$moccasin:('moccasin':#FFE4B5);
-$lavender:('lavender':#E6E6FA);
-$silver:('silver':#C0C0C0);
-$chocolate:('chocolate':#D2691E);
-$grey:('grey':#CCCCCC);
-$brown:('brown':#5d3f32);
-$pink:('pink':#ff6ec5);
-$yellow:('yellow':#ffdc2f);
-$green:('green':#3cc165);
-$ivory:('ivory':#FFFFF0);
-$violet:('violet':#EE82EE);
-$white:('white':#FFFFFF);
-$navy:('navy':#000080);
-$orange:('orange':#FFA500);
-$blue:('blue':#00BFFF);
+$red: ('red':#ff2f55);
+$turquiose: ('turquiose':#00DED1);
+$black: ('black':#000000);
+$crimson: ('crimson':#DC143C);
+$moccasin: ('moccasin':#FFE4B5);
+$lavender: ('lavender':#E6E6FA);
+$silver: ('silver':#C0C0C0);
+$chocolate: ('chocolate':#D2691E);
+$grey: ('grey':#CCCCCC);
+$grey-clouds: ('grey-clouds':#ECF0F1);
+$grey-silver: ('grey-silver':#BDC3C7);
+$grey-concrete: ('grey-concrete':#95A5A6);
+$grey-asbestos: ('grey-asbestos':#7F8C8D);
+$brown: ('brown':#5d3f32);
+$pink: ('pink':#ff6ec5);
+$yellow: ('yellow':#ffdc2f);
+$green: ('green':#3cc165);
+$ivory: ('ivory':#FFFFF0);
+$violet: ('violet':#EE82EE);
+$white: ('white':#FFFFFF);
+$navy: ('navy':#000080);
+$orange: ('orange':#FFA500);
+$blue: ('blue':#00BFFF);
 
 //Colors in a Map
-$colors:($red,$turquiose,$crimson,$moccasin,$lavender,$silver,$chocolate,$grey,$blue,$pink,
-$yellow,$green,$ivory,$violet,$white,$navy,$orange,$black,$brown);
+$colors: ($red, $turquiose, $crimson, $moccasin, $lavender, $silver, $chocolate, $grey, $grey-clouds, $grey-silver, $grey-concrete, $grey-asbestos, $blue, $pink,
+$yellow, $green, $ivory, $violet, $white, $navy, $orange, $black, $brown);
 
-@each $x in $colors{
-    @each $i,$o in $x{
-        .#{$i}{
-            color:#{$o};
-            &-b{
-                background-color: #{$o};
-            }
-        }
+@each $x in $colors {
+  @each $i, $o in $x {
+    .#{$i} {
+      color: #{$o};
+      &-b {
+        background-color: #{$o};
+      }
     }
+  }
 }

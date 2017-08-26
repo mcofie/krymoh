@@ -47,6 +47,26 @@
   .grey-b {
     background-color: #CCCCCC; }
 
+.grey-clouds {
+  color: #ECF0F1; }
+  .grey-clouds-b {
+    background-color: #ECF0F1; }
+
+.grey-silver {
+  color: #BDC3C7; }
+  .grey-silver-b {
+    background-color: #BDC3C7; }
+
+.grey-concrete {
+  color: #95A5A6; }
+  .grey-concrete-b {
+    background-color: #95A5A6; }
+
+.grey-asbestos {
+  color: #7F8C8D; }
+  .grey-asbestos-b {
+    background-color: #7F8C8D; }
+
 .blue {
   color: #00BFFF; }
   .blue-b {
